@@ -1,0 +1,44 @@
+@import "../../basic";
+.tabBar{
+	position: fixed;
+	top:64px;
+	left: 2.34rem;
+	height: 56px;
+	padding-top: 11px;
+	background: #ffffff;
+	width: calc(19.2rem - 2.34rem);
+	text-align: left;
+	z-index: 999;
+	box-shadow: 0 1px 9px  #DDDDDD;
+	span{
+		position: relative;
+		display: inline-block;
+		width: auto;
+		height: 45px;
+		line-height: 45px;
+		text-align: center;
+		padding: 0 0.2rem;
+		cursor: pointer;
+		color: #999999;
+		margin-left: 0.24rem;
+		overflow: hidden;
+		.icon{
+			display: none;
+		}
+	}
+	span:hover{
+		color: #333333;
+		border-bottom: 1px solid $blue;
+		.icon{
+			position: absolute;
+			right: 8px;
+			top: 8px;
+			display: inline-block;
+			color: red;
+		}
+	}
+	span.active{
+		color: $blue;
+		border-bottom: 1px solid $blue;
+	}
+}

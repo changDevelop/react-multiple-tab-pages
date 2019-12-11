@@ -1,0 +1,65 @@
+@import "../../basic";
+
+$menuLiHeight: 0.46rem;
+
+.menuContent {
+	height: 100%;
+	background-color: #FFFFFF;
+	font-size: 0.14rem;
+	padding-top: 0.32rem;
+	.menuLi {
+		height: $menuLiHeight;
+		line-height: $menuLiHeight;
+		color: #666666;
+		margin-bottom: 0;
+		margin-top: 0;
+		cursor: pointer;
+		text-align: left;
+		padding-left: 0.4rem;
+		> i {
+			font-size: 0.2rem;
+			color: #666666;
+			vertical-align: middle;
+		}
+		> span {
+			vertical-align: middle;
+			margin-left: 0.1rem;
+		}
+	}
+	.menuActive {
+		background-color: $themeColor;
+		height: $menuLiHeight;
+		line-height: $menuLiHeight;
+		color: #FFFFFF;
+		margin-bottom: 0;
+		margin-top: 0;
+		cursor: pointer;
+		text-align: left;
+		padding-left: 0.4rem;
+		> i {
+			font-size: 0.2rem;
+			color: #ffffff;
+			vertical-align: middle;
+		}
+		> span {
+			margin-left: 0.1rem;
+			vertical-align: middle;
+		}
+	}
+	.menuLi:hover {
+		background-color: #d4effc;
+		> i {
+			/*
+			color: #FFFFFF;
+			*/
+		}
+	}
+	.confirmLogin{
+		margin-left: 0.39rem;
+		width: 1.32rem;
+		height: 0.32rem;
+		line-height: 0.32rem;
+		margin-top: 0.08rem;
+	}
+}
+

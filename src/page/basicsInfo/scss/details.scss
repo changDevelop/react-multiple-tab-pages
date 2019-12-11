@@ -1,0 +1,40 @@
+@import "../../basic";
+.content {
+  position: relative;
+  text-align: left;
+  min-height: 7.8rem;
+  background: #ffffff;
+  margin-top: 0.24rem;
+}
+.table{
+  tbody{
+    tr:nth-child(2n){
+      background: #F9F9F9;
+    }
+  }
+}
+.item {
+  width: 50%;
+  min-height: 0.36rem;
+  height: 100%;
+  padding-top: 0.08rem;
+  padding-bottom: 0.08rem;
+  line-height: 0.20rem;
+  .key {
+    padding-left: 0.3rem;
+    width: 1.82rem;
+    display: inline-block;
+    color: #666666;
+    margin-right: 0.4rem;
+    vertical-align: middle;
+  }
+  .value {
+    width: calc(100% - 2.22rem);
+    display: inline-block;
+    color: #333333;
+    vertical-align: middle;
+  }
+}
+.table{
+  width: 100%;
+}

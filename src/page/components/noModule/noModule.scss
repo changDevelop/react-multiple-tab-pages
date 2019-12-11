@@ -1,0 +1,13 @@
+.content {
+	position: relative;
+	text-align: left;
+	min-height: 7.8rem;
+	margin-top: 0.24rem;
+	background: #ffffff;
+	.customEmpty{
+		position: absolute;
+		top:50%;
+		margin-top: -65px;
+		width: 100%;
+	}
+}

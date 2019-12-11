@@ -1,0 +1,121 @@
+@import "../../basic";
+
+.title {
+	height: 0.5rem;
+	line-height: 0.5rem;
+	color: #ffffff;
+	text-align: left;
+	padding: 0 0.24rem;
+	background: $themeColor;
+	> span:nth-child(1) {
+		float: left;
+		font-size: 0.16rem;
+	}
+	> span:nth-child(2) {
+		float: right;
+		font-size: 0.14rem;
+		cursor: pointer;
+	}
+}
+
+.diyLoading {
+	width: 100%;
+	height: 100%;
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+	text-align: center;
+}
+
+.customEmpty {
+	padding: 0.2rem 0 !important;
+}
+
+.customRemind {
+	margin-top: 50px;
+	width: 5.26rem;
+	min-height: 3.55rem;
+	height: auto;
+	border-radius: 15px;
+	overflow: hidden;
+	padding-bottom: 0;
+	:global {
+		.ant-modal-content {
+			width: 100%;
+			height: 100%;
+			.ant-modal-body {
+				position: relative;
+				display: table;
+				width: 100%;
+				height: 100%;
+				padding: 0;
+			}
+		}
+	}
+	.icon {
+		position: relative;
+		width: 1.25rem;
+		height: 1.25rem;
+		margin: 0.3rem auto;
+		font-size: 1.25rem;
+		i {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+	.confirmTitle {
+		font-size: 0.18rem;
+		color: #333333;
+		line-height: 0.18rem;
+		padding: 0 1.2rem;
+		text-align: center;
+		margin-bottom: 0.11rem;
+	}
+	.confirmMsg {
+		padding: 0 1.2rem;
+		font-size: 0.14rem;
+		line-height: 0.25rem;
+		text-align: center;
+		margin-bottom: 0.76rem;
+		min-height: 0.65rem;
+	}
+	.footer {
+		position: absolute;
+		bottom: 0.2rem;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		button:nth-child(1) {
+			width: 1.85rem;
+			height: 0.36rem;
+			border-radius: 0.18rem;
+			color: #ffffff;
+			font-size: 14px;
+			border: 0;
+			outline: none;
+			cursor: pointer;
+		}
+	}
+}
+
+.customConfirm {
+	.confirmTitle {
+		font-size: 16px;
+		color: #333333;
+		span {
+			margin-left: 10px;
+		}
+	}
+	.confirmMsg {
+		margin-top: 10px;
+		text-align: center;
+	}
+	.footer {
+		margin-top: 20px;
+		width: 100%;
+		text-align: right;
+		button:nth-child(1) {
+			margin-right: 24px;
+		}
+	}
+}

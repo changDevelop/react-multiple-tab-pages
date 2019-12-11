@@ -1,0 +1,34 @@
+@import "../../basic";
+.content {
+  position: relative;
+  text-align: left;
+  min-height: 7.8rem;
+  background: #ffffff;
+  margin-top: 0.24rem;
+}
+.elevatorSearch {
+  width: 5.8rem;
+  float: left;
+  > input {
+    border-left: none;
+    border-top-right-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+  }
+  > button:first-of-type {
+    margin-left: 0.24rem;
+  }
+  > button {
+    margin-left: 0.4rem;
+    height: 0.36rem;
+  }
+}
+.elevatorDate {
+  float: left;
+  height: 100%;
+  margin-left: 0.4rem;
+  :global {
+    .ant-calendar-picker-input.ant-input {
+      height: 36px;
+    }
+  }
+}
