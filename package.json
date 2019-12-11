@@ -70,18 +70,11 @@
   },
   "proxy": {
     "/host/": {
-      "target": "https://95009.zhoti.net/host",
+      "target": "",
       "ws": true,
       "changeOrigin": true,
       "pathRewrite": {
         "^/host/": "/"
-      }
-    },
-    "/m7Moor": {
-      "target": "http://39.98.83.104",
-      "changeOrigin": true,
-      "pathRewrite": {
-        "^/m7Moor": "/"
       }
     }
   },
