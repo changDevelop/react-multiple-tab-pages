@@ -1,0 +1,193 @@
+@import "basic";
+
+.tableList {
+	position: relative;
+	display: table;
+	width: 100%;
+	height: calc(100% - 0.5rem);
+}
+
+.operation {
+	margin-top: 0.24rem;
+	margin-bottom: 0.16rem;
+	height: 0.36rem;
+	padding: 0 0.24rem;
+	.searchInput{
+		border-radius: 0.04rem!important;
+		border: 1px solid #dddddd;
+	}
+	.searchInput:focus,
+	.searchInput:hover{
+		border: 1px solid #40a9ff!important;
+	}
+	:global {
+		.ant-select:nth-child(1){
+			.ant-select-selection {
+				border-radius: 0.04rem 0 0 0.04rem;
+				box-shadow: none;
+			}
+		}
+		.ant-input:focus,
+		.ant-input:hover{
+			border-left: 1px solid #40a9ff;
+			box-shadow: none;
+		}
+		.ant-cascader-picker{
+			height: 0.36rem;
+			line-height: 0.36rem;
+			vertical-align: top;
+			.ant-input.ant-cascader-input{
+				height: 0.36rem;
+				line-height: 0.36rem;
+				border-radius: 0.04rem 0 0 0.04rem;
+				box-shadow: none;
+			}
+		}
+		.ant-cascader-menu{
+			height: auto;
+		}
+	}
+	.cascader{
+		height: auto;
+	}
+	> button {
+		margin-left: 0.4rem;
+		height: 0.36rem;
+		vertical-align: top;
+	}
+	> input {
+		width: 318px;
+		height: 0.36rem;
+		vertical-align: top;
+		border-left: none;
+		border-radius: 0 4px 4px 0!important;
+	}
+	.timeText {
+		margin-left: 0.65rem;
+		color: #999999;
+		line-height: 0.36rem;
+	}
+	.rangePicker {
+		width: 2.9rem;
+		height: 0.36rem;
+		margin-left: 0.24rem;
+		span {
+			padding: 0;
+			height: 0.36rem;
+			:global {
+				.ant-calendar-range-picker-separator {
+					vertical-align: inherit;
+				}
+			}
+		}
+		input {
+			height: 0.36rem;
+			line-height: 0.36rem;
+			&:hover{
+				box-shadow: none;
+			}
+			&:focus{
+				box-shadow: none;
+			}
+		}
+	}
+}
+
+.table {
+	padding: 0 0.24rem;
+}
+
+.pagination {
+	position: absolute;
+	bottom: 0.24rem;
+	right: 0.24rem;
+}
+
+.blue {
+	color: $themeColor !important;
+	cursor: pointer;
+}
+
+.modalUnit {
+	line-height: 36px;
+	width: 100%;
+	margin-top: 16px;
+	position: relative;
+	> span:nth-child(1) {
+		display: inline-block;
+		width: 2.27rem;
+		padding-right: 0.52rem;
+		text-align: right;
+		> span:nth-child(1) {
+			color: $err;
+		}
+		> span:nth-child(2) {
+			color: #666666;
+		}
+	}
+	> span:nth-child(2) {
+		display: inline-block;
+		width: 4rem;
+		height: 36px;
+		input {
+			height: 36px;
+		}
+	}
+	> input:nth-child(2) {
+		display: inline-block;
+		width: 4rem;
+		height: 36px;
+	}
+	.state {
+		span {
+			display: inline-block;
+		}
+		> span {
+			width: 96px;
+			height: 36px;
+			border: 1px solid #dddddd;
+			border-radius: 4px;
+			margin-right: 0.44rem;
+			cursor: pointer;
+			> span:nth-child(1) {
+				width: 58px;
+				height: 34px;
+				text-align: center;
+				background: #dddddd;
+				color: #ffffff;
+				border-radius: 4px;
+			}
+			> span:nth-child(1).active {
+				background: $themeColor;
+			}
+			> span:nth-child(2) {
+				vertical-align: top;
+				width: 36px;
+				height: 34px;
+				line-height: 34px;
+				text-align: center;
+				color: $themeColor;
+				font-size: 20px;
+			}
+		}
+	}
+	> div:last-child {
+		padding-left: 2.27rem;
+	}
+}
+
+.footer {
+	margin-top: 32px;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	text-align: right;
+	padding-right: 0.34rem;
+	border-top: 1px solid #dddddd;
+	button {
+		width: 1.08rem;
+	}
+	button:nth-child(1) {
+		margin-right: 0.13rem;
+	}
+}

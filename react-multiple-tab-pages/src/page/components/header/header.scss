@@ -1,0 +1,106 @@
+@import "../../basic";
+
+$headerHeight: 64px;
+
+.header {
+	padding-left: 0.24rem !important;
+	padding-right: 0.24rem !important;
+	width: 100%;
+	height: $headerHeight !important;
+	background-color: $themeColor;
+	.logo {
+		padding: 0 !important;
+		width: 100%;
+		height: $headerHeight !important;
+		span {
+			display: inline-block;
+			vertical-align: top;
+			line-height: $headerHeight;
+		}
+		> span:nth-child(1) {
+			margin-top: ($headerHeight - 34)/2;
+			width: 34px;
+			height: 34px;
+			background: url("../img/header/logo.jpg");
+			background-size: 100% 100%;
+			margin-right: 8px;
+		}
+
+		> span:nth-child(2) {
+			text-align: center;
+			color: #ffffff;
+			font-size: 20px;
+			font-style: italic;
+			margin-right: 4px;
+		}
+		> span:nth-child(3) {
+			color: #ffffff;
+			font-size: 20px;
+			letter-spacing: 0.02rem;
+		}
+		> div {
+			width: auto;
+			height: 100%;
+			float: right;
+			> span {
+				width: 1.20rem;
+				font-size: 0.14rem;
+				color: #f4f4f4;
+				cursor: pointer;
+				text-align: center;
+			}
+			> span:hover {
+				color: #FFFFFF;
+				font-size: 0.16rem;
+				background: #0e81d1;
+			}
+			> span.active {
+				color: #FFFFFF;
+				font-size: 0.16rem;
+				background: #0e81d1;
+			}
+		}
+		.exit {
+			float: right;
+			font-size: 20px;
+			line-height: $headerHeight;
+			cursor: pointer;
+		}
+	}
+	.open{
+		position: absolute;
+		top:0;
+		left: 3rem;
+		border: 1px solid #ffffff;
+	}
+}
+.notification{
+	width: 4.86rem;
+	padding: 0.24rem;
+	:global{
+		.ant-notification-notice-description{
+			padding-left: 0.20rem;
+			font-size: 0.22rem;
+			color: #333333;
+		}
+		.ant-notification-notice-message{
+			font-size: 0.16rem;
+			line-height: 0.16rem;
+			margin-bottom: 0.22rem;
+			color: #666666;
+		}
+	}
+}
+.toHandle{
+	width: 1.08rem;
+	height: 0.36rem;
+	line-height: 0.36rem;
+}
+:global{
+	.ant-notification.ant-notification-topRight{
+		width: 4.86rem;
+	}
+	.ant-notification-notice-btn{
+		margin-top: 0.2rem;
+	}
+}
