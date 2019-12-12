@@ -1,7 +1,6 @@
 # 项目布局
 ├── build                                                   // 打包出来的文件
 ├── config                                                  // webpack配置文件
-├── node_modules                                            // react-scripts中config有改动，具体往下拉着看
 ├── public
 │   ├── index.css                                           // 项目公共样式
 │   ├── index.html                                          // 项目入口html
