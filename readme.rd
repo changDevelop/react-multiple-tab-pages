@@ -3,34 +3,34 @@
 ├── config                                                  // webpack配置文件
 ├── node_modules                                            // react-scripts中config有改动，具体往下拉着看
 ├── public
-│   ├── index.css                                        // 项目公共样式
-│   ├── index.html                                       // 项目入口html
-│   ├── logo.ico                                         // logo
+│   ├── index.css                                           // 项目公共样式
+│   ├── index.html                                          // 项目入口html
+│   ├── logo.ico                                            // logo
 ├── src                                                     // 源码目录
 │   ├── config
-│   │   ├── globalConfig.js                           // 全局变量
-│   │   ├── storage.js                                // sessionStorage
+│   │   ├── globalConfig.js                                 // 全局变量
+│   │   ├── storage.js                                      // sessionStorage
 │   ├── http
-│   │   ├── aes.js                                    // 加解密方法
-│   │   ├── httpApiName.js                            // 接口地址、日志打印
-│   │   ├── index.js                                  // axios配置
-│   │   ├── WebSocket.js                              //
-│   │   ├── WebSocket.swf                             //
-│   ├── img                                              //项目中的img，svg文件
-│   │   ├── login                                     // 登录页图片
-│   │   │     ├── bg.jpg                             // 登录页背景图片
-│   │   │     ├── logo.png                           // 登录页logo
-│   │   ├── address.svg                               // 位置图标
-│   │   ├── call.png                                  //
-│   │   ├── error.svg                                 // 错误提醒图标
-│   ├── page                                             // 页面
-│   │   ├── basicsInfo                                // 基础信息
-│   │   │   ├── details.js                         // 详情                key:"details-"
-│   │   │   ├── info.js                            // 信息页面            key:10
-│   │   ├── components                                // 组件
-│   │   │   ├── common                             // 公共组件
-│   │   │   ├── header                             // 头部组件
-│   │   │   ├── img                                // 组件用到媒体资源
+│   │   ├── aes.js                                          // 加解密方法
+│   │   ├── httpApiName.js                                  // 接口地址、日志打印
+│   │   ├── index.js                                        // axios配置
+│   │   ├── WebSocket.js                                    //
+│   │   ├── WebSocket.swf                                   //
+│   ├── img                                                 //项目中的img，svg文件
+│   │   ├── login                                           // 登录页图片
+│   │   │     ├── bg.jpg                                    // 登录页背景图片
+│   │   │     ├── logo.png                                  // 登录页logo
+│   │   ├── address.svg                                     // 位置图标
+│   │   ├── call.png                                        //
+│   │   ├── error.svg                                       // 错误提醒图标
+│   ├── page                                                // 页面
+│   │   ├── basicsInfo                                      // 基础信息
+│   │   │   ├── details.js                                  // 详情                key:"details-"
+│   │   │   ├── info.js                                     // 信息页面            key:10
+│   │   ├── components                                      // 组件
+│   │   │   ├── common                                      // 公共组件
+│   │   │   ├── header                                      // 头部组件 （websocket连接放在该模块）
+│   │   │   ├── img                                // 组件用到媒体资源
 │   │   │   ├── noModule                           // 没有组件时展示组件
 │   │   │   ├── sider                              // 左部组件
 │   │   │   ├── tabs                               //
